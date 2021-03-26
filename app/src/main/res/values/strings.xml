@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Mapping Neutron</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="daya_operasi">Daya Operasi</string>
+    <string name="alat_ukur">Alat Ukur</string>
+    <string name="petugas">Petugas</string>
+    <string name="next">Next</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="tindakan">Keterangan</string>
+    <string name="selesai">Selesai</string>
+
+    <string name="input_data">Input Data</string>
+    <string name="data_tersimpan">Data Tersimpan</string>
+
+    <string name="simpan">Simpan</string>
+    <string name="upload">Upload</string>
+
+    <string name="berhasil_unggah">Data berhasil diunggah</string>
+    <string name="gagal_unggah">Data gagal diunggah</string>
+
+    <string name="berhasil_simpan">Data berhasil disimpan</string>
+    <string name="gagal_simpan">Data gagal disimpan</string>
+
+    <string name="lengkapi_data">Lengkapi form pengisian</string>
+    <string name="koneksi_internet">Tidak ada koneksi internet</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+</resources>

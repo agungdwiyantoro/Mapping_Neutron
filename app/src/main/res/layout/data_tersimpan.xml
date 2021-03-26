@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator_layout"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        style="@style/tv_app_name"
+        android:text="@string/data_tersimpan"
+        android:textColor="@color/blue"
+        android:background="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+</LinearLayout>
+
+

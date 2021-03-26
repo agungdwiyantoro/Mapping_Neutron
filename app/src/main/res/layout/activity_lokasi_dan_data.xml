@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lokasi_dan_data"
+    android:id="@+id/constraintLayout"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_lokasi"
+        style="@style/tv_app_name"
+        android:text="@string/lokasi"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lokasi">
+
+
+        <EditText
+            android:id="@+id/et_1"
+            android:hint="@string/one"
+            style="@style/et_data_lokasi"
+            android:layout_marginEnd="40sp"/>
+
+        <EditText
+            android:id="@+id/et_2"
+            android:hint="@string/two"
+            style="@style/et_data_lokasi"/>
+
+        <EditText
+            android:id="@+id/et_3"
+            android:hint="@string/three"
+            style="@style/et_data_lokasi"
+            android:layout_marginEnd="40sp"/>
+
+        <EditText
+            android:id="@+id/et_4"
+            android:hint="@string/four"
+            style="@style/et_data_lokasi"/>
+
+        <EditText
+            android:id="@+id/et_5"
+            android:hint="@string/five"
+            style="@style/et_data_lokasi"
+            android:layout_marginEnd="40sp"/>
+
+        <EditText
+            android:id="@+id/et_6"
+            android:hint="@string/six"
+            style="@style/et_data_lokasi"/>
+
+        <EditText
+            android:id="@+id/et_7"
+            android:hint="@string/seven"
+            style="@style/et_data_lokasi"
+            android:layout_marginEnd="40sp"/>
+
+        <EditText
+            android:id="@+id/et_8"
+            android:hint="@string/eight"
+            style="@style/et_data_lokasi"/>
+
+        <EditText
+            android:id="@+id/et_9"
+            android:hint="@string/nine"
+
+            style="@style/et_data_lokasi"
+            android:layout_marginEnd="40sp"/>
+
+        <EditText
+            android:id="@+id/et_10"
+            android:hint="@string/ten"
+            style="@style/et_data_lokasi"/>
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/et_tindakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tindakan"
+        android:inputType="text"
+        android:maxLength="35"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/teal_200"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"/>
+
+    <Button
+        android:id="@+id/bt_simpan"
+        style="@style/bt_style"
+        android:text="@string/simpan"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tindakan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:id="@+id/constraintLayout">
+
+    <TextView
+        style="@style/tv_app_name"
+        android:id="@+id/tv_input_data"
+        android:text="@string/input_data"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/tv_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tanggal"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_daya_operasi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_input_data" />
+
+
+    <EditText
+        android:id="@+id/et_daya_operasi"
+        android:hint="@string/daya_operasi"
+        android:inputType="number"
+        style="@style/et_input_data"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/et_alat_ukur"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tanggal"/>
+
+
+    <EditText
+        android:id="@+id/et_alat_ukur"
+        android:hint="@string/alat_ukur"
+        android:inputType="text"
+        style="@style/et_input_data"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_petugas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_daya_operasi"/>
+
+
+    <EditText
+        android:id="@+id/et_petugas"
+        android:hint="@string/petugas"
+        android:inputType="text"
+        style="@style/et_input_data"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/bt_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_alat_ukur"/>
+
+
+    <Button
+        android:id="@+id/bt_next"
+        android:text="@string/next"
+        style="@style/bt_style"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_petugas"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

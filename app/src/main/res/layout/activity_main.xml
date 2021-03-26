@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        style="@style/tv_app_name"
+        app:layout_constraintVertical_bias="0.3"
+
+        android:drawableStart="@drawable/logo_batan"
+        android:gravity="start"
+        android:background="@color/white"
+        android:textColor="@color/blue"
+        android:textSize="50sp"
+
+        android:paddingStart="20dp"
+        android:paddingEnd="2dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+   <Button
+       android:id="@+id/bt_input_data"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/input_data"
+
+
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toLeftOf="@+id/bt_data_tersimpan"
+       app:layout_constraintTop_toBottomOf="@id/tv_app_name"
+
+       android:drawableTop="@drawable/rsz_input_data"
+       android:drawableTint="@color/white"
+       android:layout_marginBottom="200dp"/>
+
+
+    <Button
+        android:id="@+id/bt_data_tersimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_tersimpan"
+
+        app:layout_constraintLeft_toRightOf="@+id/bt_input_data"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_app_name"
+
+        android:drawableTop="@drawable/rsz_database"
+        android:drawableTint="@color/white"
+        android:layout_marginBottom="200dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

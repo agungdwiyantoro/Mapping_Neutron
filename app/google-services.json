@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1072697636727",
+    "project_id": "mapping-neutron",
+    "storage_bucket": "mapping-neutron.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072697636727:android:ef47a4bdfce84747e61372",
+        "android_client_info": {
+          "package_name": "com.example.mappingneutron"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072697636727-r2s3p9nv95f95ijd2eej77rgtiv1kphq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB1jRcxNomMVSuSJ9gPGWN0c0IlM1ZJhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072697636727-r2s3p9nv95f95ijd2eej77rgtiv1kphq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
